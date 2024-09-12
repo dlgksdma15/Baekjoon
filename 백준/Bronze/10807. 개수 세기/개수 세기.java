@@ -1,20 +1,20 @@
-import java.util.*;
-public class Main {
-    public static void main(String[] args){
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int[] arr = new int[N];
 
-        for(int i = 0; i < N; i++){
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0; i < n;i++){
             arr[i] = sc.nextInt();
         }
-        int F = sc.nextInt();
-        int cnt = 0;
-        for(int i = 0; i < N;i++){
-            if(arr[i] == F){
-                cnt = cnt + 1;
+        int count = 0;
+        int find = sc.nextInt();
+        for(int i = 0; i < n;i++){
+            if(find == arr[i]){
+                count++;
             }
         }
-        System.out.println(cnt);
+        System.out.println(count);
     }
 }
